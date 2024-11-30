@@ -1,0 +1,368 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #5258ff;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #5258ff;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in;
+
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Vertically center the logo and text */
+    justify-content: center; /* Horizontally center */
+    padding: 10px;
+}
+
+.institution-logo {
+    width: 90px;  /* Set the width of the logo */
+    height: auto;  /* Maintain aspect ratio */
+    margin-right: 10;  /* Adds space between the logo and text */
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.institution-logo:hover {
+    transform: scale(1.1);  /* Slightly enlarges the logo on hover */
+    transition: transform 0.3s ease-in-out;  /* Smooth transition */
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #ED9E59;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #C72C41;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: #ED9E59;
+    cursor: pointer;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1920x600.jpg?text=Hero+Image') no-repeat center center/cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero .hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.cta-button {
+    background: #ED9E59;
+    color: #1B1931;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #C72C41;
+}
+
+main {
+    padding: 20px;
+}
+
+.info-section {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-section h2 {
+    color: #EE4540;
+}
+
+.programs-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.program-item {
+    background: #f0f0f0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.program-item:hover {
+    transform: scale(1.05);
+}
+
+.submit-button {
+    background: #EE4540;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background: #C72C41;
+}
+
+.testimonial-item {
+    background: #f2f2f2;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #EE4540;
+    border-radius: 5px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: #EE4540;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #C72C41;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #510A32;
+    color: #ED9E59;
+}
+
+.footer-content {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle.active + ul {
+        display: flex;
+    }
+
+    .hero-content {
+        padding: 10px;
+    }
+
+    .hero-content {
+        text-align: left;
+    }
+    
+}
+/* Buttons */
+button, .btn {
+    background-color: #ff7f00; /* Orange button background */
+    color: #ffffff; /* White button text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  button:hover, .btn:hover {
+    background-color: #e56700; /* Slightly darker orange on hover */
+  }
+  
+  /* Links */
+  a {
+    color: #ff7f00; /* Orange links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #e56700; /* Slightly darker orange on hover */
+  }
+  /* Footer */
+footer {
+    background-color: #5258ff; /* Blue-purple footer background */
+    color: #ffffff; /* White footer text */
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+  }
+  /* Cards or highlighted sections */
+.card {
+    background-color: #ff7f00; /* Orange card background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  * Buttons */
+  button, .btn {
+    background-color: #ff7f00; /* Orange button background */
+    color: #ffffff; /* White button text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover, .btn:hover {
+    background-color: #e56700; /* Slightly darker orange on hover */
+    transform: scale(1.1); /* Enlarge button slightly on hover */
+  }
+  
+  /* Links */
+  a {
+    color: #ff7f00; /* Orange links */
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  
+  a:hover {
+    color: #e56700; /* Slightly darker orange on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+  }
+  
+  /* Feature text (like menu options or highlights) */
+  .feature {
+    color: #5258ff; /* Blue-purple text */
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .feature:hover {
+    color: #ff7f00; /* Change color to orange on hover */
+    transform: translateY(-5px); /* Slight upward movement */
+  }
+  
+  .feature::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff7f00;
+    transition: width 0.3s;
+    margin: 0 auto;
+  }
+  
+  .feature:hover::after {
+    width: 100%; /* Underline expands on hover */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #5258ff; /* Blue-purple footer background */
+    color: #ffffff; /* White footer text */
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Cards or highlighted sections */
+  .card {
+    background-color: #ff7f00; /* Orange card background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Enlarge card slightly on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
